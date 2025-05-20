@@ -17,14 +17,11 @@ export class User {
     @Column({ unique: true })
     phone_number: string;
 
-    @Column({ nullable: false })
+    @Column({ nullable: true })
     full_name: string;
 
     @Column({ nullable: true })
     image: string;
-
-    @Column({ nullable: false })
-    date_of_birth: Date;
 
     @Column({ default: "USER" })
     role: string;
